@@ -1,0 +1,79 @@
+CRITICAL - 2023-04-23 11:59:21 --> Declaration of App\Models\Post_model::save($data) must be compatible with CodeIgniter\BaseModel::save($data): bool
+in APPPATH/Models/Post_model.php on line 12.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-04-23 12:07:38 --> Declaration of App\Models\Post_model::save($data) must be compatible with CodeIgniter\BaseModel::save($data): bool
+in APPPATH/Models/Post_model.php on line 12.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-04-23 12:23:27 --> Undefined variable $posts
+in APPPATH/Views/discussion_forum.php on line 22.
+ 1 APPPATH/Views/discussion_forum.php(22): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/discussion_forum.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Forum.php(14): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Forum->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-23 12:23:56 --> Undefined variable $post
+in APPPATH/Views/discussion_forum.php on line 22.
+ 1 APPPATH/Views/discussion_forum.php(22): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/discussion_forum.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Forum.php(14): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Forum->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-23 13:50:32 --> Undefined variable $titles
+in APPPATH/Controllers/Forum.php on line 47.
+ 1 APPPATH/Controllers/Forum.php(47): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Forum->autocomplete()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-23 13:50:35 --> Undefined variable $titles
+in APPPATH/Controllers/Forum.php on line 47.
+ 1 APPPATH/Controllers/Forum.php(47): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Forum->autocomplete()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-23 13:50:39 --> Undefined variable $titles
+in APPPATH/Controllers/Forum.php on line 47.
+ 1 APPPATH/Controllers/Forum.php(47): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Forum->autocomplete()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-23 14:47:08 --> Undefined constant "App\Controllers\this"
+in APPPATH/Controllers/Forum.php on line 46.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Forum->autocomplete()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-23 14:47:12 --> Undefined constant "App\Controllers\this"
+in APPPATH/Controllers/Forum.php on line 46.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Forum->autocomplete()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-23 14:52:18 --> Undefined constant "App\Controllers\this"
+in APPPATH/Controllers/Forum.php on line 46.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Forum->autocomplete()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-23 14:56:48 --> Undefined constant "App\Controllers\this"
+in APPPATH/Controllers/Forum.php on line 46.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Forum->autocomplete()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-23 14:57:31 --> Undefined constant "App\Controllers\this"
+in APPPATH/Controllers/Forum.php on line 46.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Forum->autocomplete()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

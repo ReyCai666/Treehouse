@@ -1,0 +1,103 @@
+CRITICAL - 2023-04-25 06:36:33 --> file_get_contents(assets/Json/course_names.json): Failed to open stream: No such file or directory
+in APPPATH/Controllers/Login.php on line 93.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Login.php(93): file_get_contents()
+ 3 APPPATH/Controllers/Login.php(60): App\Controllers\Login->import_json()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->check_login()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-25 06:40:53 --> file_get_contents(/var/www/htdocs/Treehouse/app/assets/Json/course_names.json): Failed to open stream: No such file or directory
+in APPPATH/Controllers/Login.php on line 93.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Login.php(93): file_get_contents()
+ 3 APPPATH/Controllers/Login.php(60): App\Controllers\Login->import_json()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->check_login()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-25 06:43:00 --> file_get_contents(/var/www/htdocs/Treehouse/app/Controllersassets/Json/course_names.json): Failed to open stream: No such file or directory
+in APPPATH/Controllers/Login.php on line 93.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Login.php(93): file_get_contents()
+ 3 APPPATH/Controllers/Login.php(60): App\Controllers\Login->import_json()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->check_login()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-25 06:44:26 --> file_get_contents(/var/www/htdocs/Treehouse/app/Controllersassets/Json/course_names.json): Failed to open stream: No such file or directory
+in APPPATH/Controllers/Login.php on line 93.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Login.php(93): file_get_contents()
+ 3 APPPATH/Controllers/Login.php(60): App\Controllers\Login->import_json()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->check_login()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-25 06:45:35 --> file_get_contents(assets/Json/course_names.json): Failed to open stream: No such file or directory
+in APPPATH/Controllers/Login.php on line 93.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Login.php(93): file_get_contents()
+ 3 APPPATH/Controllers/Login.php(60): App\Controllers\Login->import_json()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->check_login()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-25 06:49:00 --> file_get_contents(/var/www/htdocs/Treehouse/app/Controllers/../assets/Json/edit.json): Failed to open stream: No such file or directory
+in APPPATH/Controllers/Login.php on line 93.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Login.php(93): file_get_contents()
+ 3 APPPATH/Controllers/Login.php(60): App\Controllers\Login->import_json()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->check_login()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-25 06:50:02 --> file_get_contents(/var/www/htdocs/Treehouse/app/assets/Json/course_names.json): Failed to open stream: No such file or directory
+in APPPATH/Controllers/Login.php on line 93.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Login.php(93): file_get_contents()
+ 3 APPPATH/Controllers/Login.php(60): App\Controllers\Login->import_json()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->check_login()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-25 06:51:42 --> file_get_contents(/var/www/htdocs/Treehouse/public/assets/Json/course_names.json): Failed to open stream: No such file or directory
+in APPPATH/Controllers/Login.php on line 93.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Login.php(93): file_get_contents()
+ 3 APPPATH/Controllers/Login.php(60): App\Controllers\Login->import_json()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->check_login()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-25 06:51:54 --> file_get_contents(/var/www/htdocs/Treehouse/public/assets/Json/course_names.json): Failed to open stream: No such file or directory
+in APPPATH/Controllers/Login.php on line 93.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Login.php(93): file_get_contents()
+ 3 APPPATH/Controllers/Login.php(60): App\Controllers\Login->import_json()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->check_login()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-25 07:06:34 --> There is no data to update.
+in SYSTEMPATH/BaseModel.php on line 924.
+ 1 SYSTEMPATH/BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset()
+ 2 SYSTEMPATH/Model.php(756): CodeIgniter\BaseModel->update()
+ 3 APPPATH/Controllers/Login.php(62): CodeIgniter\Model->update()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->check_login()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-25 07:28:36 --> Undefined variable $data
+in APPPATH/Controllers/CourseReview.php on line 12.
+ 1 APPPATH/Controllers/CourseReview.php(12): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\CourseReview->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-25 20:47:03 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-25 20:47:03 --> 
+hello: 220 mailhub.eait.uq.edu.au ESMTP Sendmail 8.15.1/8.15.1; Tue, 25 Apr 2023 20:47:03 +1000 (AEST)
+
+The following SMTP error was encountered: 220 mailhub.eait.uq.edu.au ESMTP Sendmail 8.15.1/8.15.1; Tue, 25 Apr 2023 20:47:03 +1000 (AEST)
+

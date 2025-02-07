@@ -1,0 +1,182 @@
+CRITICAL - 2023-04-17 12:18:44 --> Class "App\Controllers\PasswordReset_model" not found
+in APPPATH/Controllers/ForgotPassword.php on line 61.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ForgotPassword->reset_password()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 12:21:49 --> Class "App\Models\PasswordReset_model" not found
+in APPPATH/Controllers/ForgotPassword.php on line 63.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ForgotPassword->reset_password()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 12:23:29 --> Undefined variable $token
+in APPPATH/Controllers/ForgotPassword.php on line 65.
+ 1 APPPATH/Controllers/ForgotPassword.php(65): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ForgotPassword->reset_password()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 13:07:35 --> Undefined variable $passwordReset
+in APPPATH/Controllers/ForgotPassword.php on line 84.
+ 1 APPPATH/Controllers/ForgotPassword.php(84): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ForgotPassword->reset_password()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 13:08:13 --> Cannot use object of type App\Models\PasswordReset_model as array
+in APPPATH/Controllers/ForgotPassword.php on line 84.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ForgotPassword->reset_password()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-17 13:11:40 --> mysqli_sql_exception: Unknown column 'expiry_timestamp' in 'field list' in /var/www/htdocs/Treehouse/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/Treehouse/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/Treehouse/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/Treehouse/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/Treehouse/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/Treehouse/app/Models/PasswordReset_model.php(44): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/htdocs/Treehouse/app/Controllers/ForgotPassword.php(84): App\Models\PasswordReset_model->getPasswordResetExpiryTimestamp()
+#6 /var/www/htdocs/Treehouse/system/CodeIgniter.php(934): App\Controllers\ForgotPassword->reset_password()
+#7 /var/www/htdocs/Treehouse/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/Treehouse/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/Treehouse/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-17 13:11:40 --> Unknown column 'expiry_timestamp' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/PasswordReset_model.php(44): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/ForgotPassword.php(84): App\Models\PasswordReset_model->getPasswordResetExpiryTimestamp()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ForgotPassword->reset_password()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 13:12:36 --> Trying to access array offset on value of type null
+in APPPATH/Models/PasswordReset_model.php on line 46.
+ 1 APPPATH/Models/PasswordReset_model.php(46): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/ForgotPassword.php(84): App\Models\PasswordReset_model->getPasswordResetExpiryTimestamp()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ForgotPassword->reset_password()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 13:16:43 --> Class "App\Controllers\User_model" not found
+in APPPATH/Controllers/ForgotPassword.php on line 18.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ForgotPassword->send_reset_token()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 13:17:21 --> Class "App\Controllers\User_model" not found
+in APPPATH/Controllers/ForgotPassword.php on line 19.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ForgotPassword->send_reset_token()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 13:17:23 --> Class "App\Controllers\User_model" not found
+in APPPATH/Controllers/ForgotPassword.php on line 19.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ForgotPassword->send_reset_token()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 13:17:23 --> Class "App\Controllers\User_model" not found
+in APPPATH/Controllers/ForgotPassword.php on line 19.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ForgotPassword->send_reset_token()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 13:17:24 --> Class "App\Controllers\User_model" not found
+in APPPATH/Controllers/ForgotPassword.php on line 19.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ForgotPassword->send_reset_token()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 13:17:24 --> Class "App\Controllers\User_model" not found
+in APPPATH/Controllers/ForgotPassword.php on line 19.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ForgotPassword->send_reset_token()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 13:17:24 --> Class "App\Controllers\User_model" not found
+in APPPATH/Controllers/ForgotPassword.php on line 19.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ForgotPassword->send_reset_token()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 13:17:25 --> Class "App\Controllers\User_model" not found
+in APPPATH/Controllers/ForgotPassword.php on line 19.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ForgotPassword->send_reset_token()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 13:17:25 --> Class "App\Controllers\User_model" not found
+in APPPATH/Controllers/ForgotPassword.php on line 19.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ForgotPassword->send_reset_token()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 13:17:26 --> Class "App\Controllers\User_model" not found
+in APPPATH/Controllers/ForgotPassword.php on line 19.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ForgotPassword->send_reset_token()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-17 14:09:08 --> mysqli_sql_exception: Unknown column 'expiry_timestamp' in 'field list' in /var/www/htdocs/Treehouse/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/Treehouse/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/Treehouse/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/Treehouse/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/Treehouse/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/Treehouse/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/htdocs/Treehouse/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#6 /var/www/htdocs/Treehouse/system/Model.php(730): CodeIgniter\BaseModel->insert()
+#7 /var/www/htdocs/Treehouse/app/Controllers/ForgotPassword.php(29): CodeIgniter\Model->insert()
+#8 /var/www/htdocs/Treehouse/system/CodeIgniter.php(934): App\Controllers\ForgotPassword->index()
+#9 /var/www/htdocs/Treehouse/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/htdocs/Treehouse/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/htdocs/Treehouse/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-04-17 14:09:08 --> Unknown column 'expiry_timestamp' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Controllers/ForgotPassword.php(29): CodeIgniter\Model->insert()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ForgotPassword->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 14:10:53 --> Undefined variable $email
+in APPPATH/Controllers/ForgotPassword.php on line 100.
+ 1 APPPATH/Controllers/ForgotPassword.php(100): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/ForgotPassword.php(30): App\Controllers\ForgotPassword->send_reset_token()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ForgotPassword->index()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-17 14:11:52 --> mysqli_sql_exception: Unknown column 'expiry_at' in 'field list' in /var/www/htdocs/Treehouse/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/Treehouse/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/Treehouse/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/Treehouse/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/Treehouse/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/Treehouse/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/htdocs/Treehouse/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#6 /var/www/htdocs/Treehouse/system/Model.php(730): CodeIgniter\BaseModel->insert()
+#7 /var/www/htdocs/Treehouse/app/Controllers/ForgotPassword.php(29): CodeIgniter\Model->insert()
+#8 /var/www/htdocs/Treehouse/system/CodeIgniter.php(934): App\Controllers\ForgotPassword->index()
+#9 /var/www/htdocs/Treehouse/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/htdocs/Treehouse/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/htdocs/Treehouse/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-04-17 14:11:52 --> Unknown column 'expiry_at' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Controllers/ForgotPassword.php(29): CodeIgniter\Model->insert()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ForgotPassword->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

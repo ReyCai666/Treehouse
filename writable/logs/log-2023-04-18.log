@@ -1,0 +1,610 @@
+ERROR - 2023-04-18 00:19:27 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-18 00:19:27 --> 220 mailhub.eait.uq.edu.au ESMTP Sendmail 8.15.1/8.15.1; Tue, 18 Apr 2023 00:19:22 +1000 (AEST)
+
+hello: 250-mailhub.eait.uq.edu.au Hello infs3202-ed18d3de.zones.eait.uq.edu.au [172.23.83.216], pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-8BITMIME
+250-SIZE 67108864
+250-DSN
+250-ETRN
+250-STARTTLS
+250-DELIVERBY
+250 HELP
+
+from: 
+The following SMTP error was encountered: 
+quit: 250 2.1.0 <s4682249@student.uq.edu.au>... Sender ok
+
+The following SMTP error was encountered: 250 2.1.0 <s4682249@student.uq.edu.au>... Sender ok
+
+CRITICAL - 2023-04-18 00:34:13 --> Undefined array key "expiry_timestamp"
+in APPPATH/Models/PasswordReset_model.php on line 46.
+ 1 APPPATH/Models/PasswordReset_model.php(46): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/ForgotPassword.php(59): App\Models\PasswordReset_model->getPasswordResetExpiryTimestamp()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ForgotPassword->reset_password()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-18 00:35:41 --> Allowed fields must be specified for model: "App\Models\User_model"
+in SYSTEMPATH/BaseModel.php on line 1242.
+ 1 SYSTEMPATH/BaseModel.php(1242): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields()
+ 2 SYSTEMPATH/BaseModel.php(919): CodeIgniter\BaseModel->doProtectFields()
+ 3 SYSTEMPATH/Model.php(756): CodeIgniter\BaseModel->update()
+ 4 APPPATH/Controllers/ForgotPassword.php(75): CodeIgniter\Model->update()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ForgotPassword->reset_password()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-18 18:35:51 --> Trying to access array offset on value of type null
+in APPPATH/Models/PasswordReset_model.php on line 46.
+ 1 APPPATH/Models/PasswordReset_model.php(46): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/ForgotPassword.php(59): App\Models\PasswordReset_model->getPasswordResetExpiryTimestamp()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ForgotPassword->reset_password()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-18 18:36:45 --> Allowed fields must be specified for model: "App\Models\User_model"
+in SYSTEMPATH/BaseModel.php on line 1242.
+ 1 SYSTEMPATH/BaseModel.php(1242): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields()
+ 2 SYSTEMPATH/BaseModel.php(919): CodeIgniter\BaseModel->doProtectFields()
+ 3 SYSTEMPATH/Model.php(756): CodeIgniter\BaseModel->update()
+ 4 APPPATH/Controllers/ForgotPassword.php(75): CodeIgniter\Model->update()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ForgotPassword->reset_password()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-18 18:37:24 --> mysqli_sql_exception: Unknown column 'email' in 'where clause' in /var/www/htdocs/Treehouse/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/Treehouse/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/Treehouse/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/Treehouse/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/Treehouse/system/Database/BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/Treehouse/system/Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 /var/www/htdocs/Treehouse/system/BaseModel.php(1065): CodeIgniter\Model->doDelete()
+#6 /var/www/htdocs/Treehouse/app/Controllers/ForgotPassword.php(78): CodeIgniter\BaseModel->delete()
+#7 /var/www/htdocs/Treehouse/system/CodeIgniter.php(934): App\Controllers\ForgotPassword->reset_password()
+#8 /var/www/htdocs/Treehouse/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/htdocs/Treehouse/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/htdocs/Treehouse/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-04-18 18:37:24 --> Unknown column 'email' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH/BaseModel.php(1065): CodeIgniter\Model->doDelete()
+ 4 APPPATH/Controllers/ForgotPassword.php(78): CodeIgniter\BaseModel->delete()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ForgotPassword->reset_password()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-18 18:40:17 --> mysqli_sql_exception: Unknown column 'email' in 'where clause' in /var/www/htdocs/Treehouse/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/Treehouse/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/Treehouse/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/Treehouse/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/Treehouse/system/Database/BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/Treehouse/system/Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 /var/www/htdocs/Treehouse/system/BaseModel.php(1065): CodeIgniter\Model->doDelete()
+#6 /var/www/htdocs/Treehouse/app/Controllers/ForgotPassword.php(78): CodeIgniter\BaseModel->delete()
+#7 /var/www/htdocs/Treehouse/system/CodeIgniter.php(934): App\Controllers\ForgotPassword->reset_password()
+#8 /var/www/htdocs/Treehouse/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/htdocs/Treehouse/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/htdocs/Treehouse/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-04-18 18:40:17 --> Unknown column 'email' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH/BaseModel.php(1065): CodeIgniter\Model->doDelete()
+ 4 APPPATH/Controllers/ForgotPassword.php(78): CodeIgniter\BaseModel->delete()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ForgotPassword->reset_password()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-18 18:42:21 --> mysqli_sql_exception: Unknown column 'email' in 'where clause' in /var/www/htdocs/Treehouse/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/Treehouse/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/Treehouse/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/Treehouse/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/Treehouse/system/Database/BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/Treehouse/system/Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 /var/www/htdocs/Treehouse/system/BaseModel.php(1065): CodeIgniter\Model->doDelete()
+#6 /var/www/htdocs/Treehouse/app/Controllers/ForgotPassword.php(78): CodeIgniter\BaseModel->delete()
+#7 /var/www/htdocs/Treehouse/system/CodeIgniter.php(934): App\Controllers\ForgotPassword->reset_password()
+#8 /var/www/htdocs/Treehouse/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/htdocs/Treehouse/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/htdocs/Treehouse/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-04-18 18:42:21 --> Unknown column 'email' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH/BaseModel.php(1065): CodeIgniter\Model->doDelete()
+ 4 APPPATH/Controllers/ForgotPassword.php(78): CodeIgniter\BaseModel->delete()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ForgotPassword->reset_password()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-18 18:42:23 --> mysqli_sql_exception: Unknown column 'email' in 'where clause' in /var/www/htdocs/Treehouse/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/Treehouse/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/Treehouse/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/Treehouse/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/Treehouse/system/Database/BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/Treehouse/system/Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 /var/www/htdocs/Treehouse/system/BaseModel.php(1065): CodeIgniter\Model->doDelete()
+#6 /var/www/htdocs/Treehouse/app/Controllers/ForgotPassword.php(78): CodeIgniter\BaseModel->delete()
+#7 /var/www/htdocs/Treehouse/system/CodeIgniter.php(934): App\Controllers\ForgotPassword->reset_password()
+#8 /var/www/htdocs/Treehouse/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/htdocs/Treehouse/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/htdocs/Treehouse/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-04-18 18:42:23 --> Unknown column 'email' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH/BaseModel.php(1065): CodeIgniter\Model->doDelete()
+ 4 APPPATH/Controllers/ForgotPassword.php(78): CodeIgniter\BaseModel->delete()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ForgotPassword->reset_password()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-18 18:44:29 --> mysqli_sql_exception: Unknown column 'email' in 'where clause' in /var/www/htdocs/Treehouse/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/Treehouse/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/Treehouse/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/Treehouse/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/Treehouse/system/Database/BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/Treehouse/system/Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 /var/www/htdocs/Treehouse/system/BaseModel.php(1065): CodeIgniter\Model->doDelete()
+#6 /var/www/htdocs/Treehouse/app/Controllers/ForgotPassword.php(78): CodeIgniter\BaseModel->delete()
+#7 /var/www/htdocs/Treehouse/system/CodeIgniter.php(934): App\Controllers\ForgotPassword->reset_password()
+#8 /var/www/htdocs/Treehouse/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/htdocs/Treehouse/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/htdocs/Treehouse/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-04-18 18:44:29 --> Unknown column 'email' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH/BaseModel.php(1065): CodeIgniter\Model->doDelete()
+ 4 APPPATH/Controllers/ForgotPassword.php(78): CodeIgniter\BaseModel->delete()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ForgotPassword->reset_password()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-18 18:46:00 --> mysqli_sql_exception: Unknown column 'email' in 'where clause' in /var/www/htdocs/Treehouse/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/Treehouse/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/Treehouse/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/Treehouse/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/Treehouse/system/Database/BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/Treehouse/system/Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 /var/www/htdocs/Treehouse/system/BaseModel.php(1065): CodeIgniter\Model->doDelete()
+#6 /var/www/htdocs/Treehouse/app/Controllers/ForgotPassword.php(78): CodeIgniter\BaseModel->delete()
+#7 /var/www/htdocs/Treehouse/system/CodeIgniter.php(934): App\Controllers\ForgotPassword->reset_password()
+#8 /var/www/htdocs/Treehouse/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/htdocs/Treehouse/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/htdocs/Treehouse/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-04-18 18:46:00 --> Unknown column 'email' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH/BaseModel.php(1065): CodeIgniter\Model->doDelete()
+ 4 APPPATH/Controllers/ForgotPassword.php(78): CodeIgniter\BaseModel->delete()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ForgotPassword->reset_password()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-18 18:48:42 --> mysqli_sql_exception: Unknown column 'email' in 'where clause' in /var/www/htdocs/Treehouse/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/Treehouse/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/Treehouse/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/Treehouse/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/Treehouse/system/Database/BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/Treehouse/system/Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 /var/www/htdocs/Treehouse/system/BaseModel.php(1065): CodeIgniter\Model->doDelete()
+#6 /var/www/htdocs/Treehouse/app/Controllers/ForgotPassword.php(78): CodeIgniter\BaseModel->delete()
+#7 /var/www/htdocs/Treehouse/system/CodeIgniter.php(934): App\Controllers\ForgotPassword->reset_password()
+#8 /var/www/htdocs/Treehouse/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/htdocs/Treehouse/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/htdocs/Treehouse/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-04-18 18:48:42 --> Unknown column 'email' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH/BaseModel.php(1065): CodeIgniter\Model->doDelete()
+ 4 APPPATH/Controllers/ForgotPassword.php(78): CodeIgniter\BaseModel->delete()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ForgotPassword->reset_password()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-18 18:51:46 --> mysqli_sql_exception: Unknown column 'email' in 'where clause' in /var/www/htdocs/Treehouse/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/Treehouse/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/Treehouse/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/Treehouse/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/Treehouse/system/Database/BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/Treehouse/system/Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 /var/www/htdocs/Treehouse/system/BaseModel.php(1065): CodeIgniter\Model->doDelete()
+#6 /var/www/htdocs/Treehouse/app/Controllers/ForgotPassword.php(78): CodeIgniter\BaseModel->delete()
+#7 /var/www/htdocs/Treehouse/system/CodeIgniter.php(934): App\Controllers\ForgotPassword->reset_password()
+#8 /var/www/htdocs/Treehouse/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/htdocs/Treehouse/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/htdocs/Treehouse/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-04-18 18:51:46 --> Unknown column 'email' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH/BaseModel.php(1065): CodeIgniter\Model->doDelete()
+ 4 APPPATH/Controllers/ForgotPassword.php(78): CodeIgniter\BaseModel->delete()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ForgotPassword->reset_password()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-18 18:51:49 --> mysqli_sql_exception: Unknown column 'email' in 'where clause' in /var/www/htdocs/Treehouse/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/Treehouse/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/Treehouse/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/Treehouse/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/Treehouse/system/Database/BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/Treehouse/system/Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 /var/www/htdocs/Treehouse/system/BaseModel.php(1065): CodeIgniter\Model->doDelete()
+#6 /var/www/htdocs/Treehouse/app/Controllers/ForgotPassword.php(78): CodeIgniter\BaseModel->delete()
+#7 /var/www/htdocs/Treehouse/system/CodeIgniter.php(934): App\Controllers\ForgotPassword->reset_password()
+#8 /var/www/htdocs/Treehouse/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/htdocs/Treehouse/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/htdocs/Treehouse/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-04-18 18:51:49 --> Unknown column 'email' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH/BaseModel.php(1065): CodeIgniter\Model->doDelete()
+ 4 APPPATH/Controllers/ForgotPassword.php(78): CodeIgniter\BaseModel->delete()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ForgotPassword->reset_password()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-18 18:56:13 --> mysqli_sql_exception: Unknown column 'users.email' in 'where clause' in /var/www/htdocs/Treehouse/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/Treehouse/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/Treehouse/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/Treehouse/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/Treehouse/system/Database/BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/Treehouse/app/Models/PasswordReset_model.php(18): CodeIgniter\Database\BaseBuilder->delete()
+#5 /var/www/htdocs/Treehouse/app/Controllers/ForgotPassword.php(78): App\Models\PasswordReset_model->deletePasswordResetTokenByEmail()
+#6 /var/www/htdocs/Treehouse/system/CodeIgniter.php(934): App\Controllers\ForgotPassword->reset_password()
+#7 /var/www/htdocs/Treehouse/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/Treehouse/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/Treehouse/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-18 18:56:13 --> Unknown column 'users.email' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/PasswordReset_model.php(18): CodeIgniter\Database\BaseBuilder->delete()
+ 3 APPPATH/Controllers/ForgotPassword.php(78): App\Models\PasswordReset_model->deletePasswordResetTokenByEmail()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ForgotPassword->reset_password()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-18 19:20:59 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-18 19:20:59 --> 220 mailhub.eait.uq.edu.au ESMTP Sendmail 8.15.1/8.15.1; Tue, 18 Apr 2023 19:20:53 +1000 (AEST)
+
+hello: 250-mailhub.eait.uq.edu.au Hello infs3202-ed18d3de.zones.eait.uq.edu.au [172.23.83.216], pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-8BITMIME
+250-SIZE 67108864
+250-DSN
+250-ETRN
+250-STARTTLS
+250-DELIVERBY
+250 HELP
+
+from: 250 2.1.0 <s4682249@student.uq.edu.au>... Sender ok
+
+to: 250 2.1.5 <yingzheng.cai@uqconnect.edu.au>... Recipient ok
+
+data: 354 Enter mail, end with "." on a line by itself
+
+
+quit: 250 2.0.0 33I9KrqR031223 Message accepted for delivery
+
+The following SMTP error was encountered: 250 2.0.0 33I9KrqR031223 Message accepted for delivery
+
+The following SMTP error was encountered: 
+ERROR - 2023-04-18 19:48:57 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-18 19:48:57 --> 220 mailhub.eait.uq.edu.au ESMTP Sendmail 8.15.1/8.15.1; Tue, 18 Apr 2023 19:48:51 +1000 (AEST)
+
+hello: 250-mailhub.eait.uq.edu.au Hello infs3202-ed18d3de.zones.eait.uq.edu.au [172.23.83.216], pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-8BITMIME
+250-SIZE 67108864
+250-DSN
+250-ETRN
+250-STARTTLS
+250-DELIVERBY
+250 HELP
+
+from: 250 2.1.0 <s4682249@student.uq.edu.au>... Sender ok
+
+to: 250 2.1.5 <yingzheng.cai@uqconnect.edu.au>... Recipient ok
+
+data: 354 Enter mail, end with "." on a line by itself
+
+
+quit: 250 2.0.0 33I9mpbM015482 Message accepted for delivery
+
+The following SMTP error was encountered: 250 2.0.0 33I9mpbM015482 Message accepted for delivery
+
+The following SMTP error was encountered: 
+CRITICAL - 2023-04-18 11:41:24 --> Undefined variable $user
+in APPPATH/Views/user_profile.php on line 19.
+ 1 APPPATH/Views/user_profile.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user_profile.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Login.php(52): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->check_login()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-18 11:41:53 --> Undefined variable $user
+in APPPATH/Views/user_profile.php on line 18.
+ 1 APPPATH/Views/user_profile.php(18): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user_profile.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Login.php(52): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->check_login()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-18 11:41:57 --> Undefined variable $user
+in APPPATH/Views/user_profile.php on line 18.
+ 1 APPPATH/Views/user_profile.php(18): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user_profile.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Login.php(52): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->check_login()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-18 11:44:04 --> Undefined variable $user
+in APPPATH/Views/user_profile.php on line 18.
+ 1 APPPATH/Views/user_profile.php(18): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user_profile.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Login.php(52): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->check_login()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-18 11:44:11 --> Undefined variable $user
+in APPPATH/Views/user_profile.php on line 18.
+ 1 APPPATH/Views/user_profile.php(18): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user_profile.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Login.php(52): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->check_login()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-18 11:47:26 --> Undefined variable $user
+in APPPATH/Views/user_profile.php on line 18.
+ 1 APPPATH/Views/user_profile.php(18): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user_profile.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Login.php(52): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->check_login()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-18 11:47:57 --> Undefined variable $user
+in APPPATH/Views/user_profile.php on line 18.
+ 1 APPPATH/Views/user_profile.php(18): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user_profile.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Login.php(52): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->check_login()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-18 11:48:00 --> Undefined variable $user
+in APPPATH/Views/user_profile.php on line 18.
+ 1 APPPATH/Views/user_profile.php(18): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user_profile.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Login.php(52): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->check_login()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-18 11:48:07 --> Undefined variable $user
+in APPPATH/Views/user_profile.php on line 18.
+ 1 APPPATH/Views/user_profile.php(18): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user_profile.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Login.php(52): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->check_login()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-18 11:50:11 --> Undefined variable $user
+in APPPATH/Views/user_profile.php on line 18.
+ 1 APPPATH/Views/user_profile.php(18): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user_profile.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Login.php(52): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->check_login()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-18 11:50:19 --> Undefined variable $user
+in APPPATH/Views/user_profile.php on line 18.
+ 1 APPPATH/Views/user_profile.php(18): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user_profile.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Login.php(52): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->check_login()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-18 11:50:45 --> Undefined variable $user
+in APPPATH/Views/user_profile.php on line 18.
+ 1 APPPATH/Views/user_profile.php(18): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user_profile.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Login.php(52): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->check_login()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-18 11:50:59 --> Undefined variable $user
+in APPPATH/Views/user_profile.php on line 18.
+ 1 APPPATH/Views/user_profile.php(18): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user_profile.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Login.php(52): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->check_login()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-18 11:51:23 --> Undefined variable $user
+in APPPATH/Views/user_profile.php on line 18.
+ 1 APPPATH/Views/user_profile.php(18): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user_profile.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Login.php(52): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->check_login()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-18 11:51:45 --> Undefined variable $user
+in APPPATH/Views/user_profile.php on line 18.
+ 1 APPPATH/Views/user_profile.php(18): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user_profile.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Login.php(52): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->check_login()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-18 11:58:25 --> Undefined variable $user
+in APPPATH/Views/user_profile.php on line 18.
+ 1 APPPATH/Views/user_profile.php(18): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user_profile.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Login.php(52): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->check_login()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-18 11:59:05 --> Undefined variable $user
+in APPPATH/Views/user_profile.php on line 18.
+ 1 APPPATH/Views/user_profile.php(18): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user_profile.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Login.php(52): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->check_login()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-18 12:00:47 --> Undefined variable $user
+in APPPATH/Views/user_profile.php on line 18.
+ 1 APPPATH/Views/user_profile.php(18): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user_profile.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Login.php(52): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->check_login()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-18 12:01:12 --> Undefined variable $user
+in APPPATH/Views/user_profile.php on line 18.
+ 1 APPPATH/Views/user_profile.php(18): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user_profile.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Login.php(52): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->check_login()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-18 12:01:22 --> Undefined variable $user
+in APPPATH/Views/user_profile.php on line 18.
+ 1 APPPATH/Views/user_profile.php(18): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user_profile.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Login.php(52): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->check_login()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-18 12:01:38 --> Undefined variable $user
+in APPPATH/Views/user_profile.php on line 18.
+ 1 APPPATH/Views/user_profile.php(18): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user_profile.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Login.php(52): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->check_login()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-18 12:01:45 --> Undefined variable $user
+in APPPATH/Views/user_profile.php on line 18.
+ 1 APPPATH/Views/user_profile.php(18): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user_profile.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Login.php(52): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->check_login()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-18 12:01:56 --> Undefined variable $user
+in APPPATH/Views/user_profile.php on line 18.
+ 1 APPPATH/Views/user_profile.php(18): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user_profile.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Login.php(52): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->check_login()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-18 12:39:00 --> Undefined array key "profile_picture"
+in APPPATH/Views/user_profile.php on line 16.
+ 1 APPPATH/Views/user_profile.php(16): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user_profile.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Login.php(53): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->check_login()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

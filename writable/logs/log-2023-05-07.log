@@ -1,0 +1,123 @@
+CRITICAL - 2023-05-07 02:47:22 --> Undefined variable $user_id
+in APPPATH/Views/post_content.php on line 59.
+ 1 APPPATH/Views/post_content.php(59): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/post_content.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Forum.php(78): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Forum->displayPost()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-07 20:46:26 --> Trying to access array offset on value of type null
+in APPPATH/Views/post_content.php on line 12.
+ 1 APPPATH/Views/post_content.php(12): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/post_content.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Forum.php(99): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Forum->displayPost()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-07 11:29:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-07 11:29:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-07 11:29:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-07 11:29:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-07 11:41:00 --> Could not move file "phpkrTnwL" to "/var/www/htdocs/Treehouse/writable/attachments/". Reason: 
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 149.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed()
+ 2 APPPATH/Controllers/Forum.php(62): CodeIgniter\HTTP\Files\UploadedFile->move()
+ 3 APPPATH/Controllers/Forum.php(46): App\Controllers\Forum->uploadMultipleFiles()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Forum->save()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-07 11:43:42 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`Treehouse`.`post_attachments`, CONSTRAINT `post_attachments_ibfk_1` FOREIGN KEY (`post_id`) REFERENCES `post` (`id`)) in /var/www/htdocs/Treehouse/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/Treehouse/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/Treehouse/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/Treehouse/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/Treehouse/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/Treehouse/app/Models/Post_model.php(101): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/htdocs/Treehouse/app/Controllers/Forum.php(65): App\Models\Post_model->uploadAttachments()
+#6 /var/www/htdocs/Treehouse/app/Controllers/Forum.php(46): App\Controllers\Forum->uploadMultipleFiles()
+#7 /var/www/htdocs/Treehouse/system/CodeIgniter.php(934): App\Controllers\Forum->save()
+#8 /var/www/htdocs/Treehouse/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/htdocs/Treehouse/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/htdocs/Treehouse/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-07 11:43:42 --> Cannot add or update a child row: a foreign key constraint fails (`Treehouse`.`post_attachments`, CONSTRAINT `post_attachments_ibfk_1` FOREIGN KEY (`post_id`) REFERENCES `post` (`id`))
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/Post_model.php(101): CodeIgniter\Database\BaseBuilder->insert()
+ 3 APPPATH/Controllers/Forum.php(65): App\Models\Post_model->uploadAttachments()
+ 4 APPPATH/Controllers/Forum.php(46): App\Controllers\Forum->uploadMultipleFiles()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Forum->save()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-07 11:46:35 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`Treehouse`.`post_attachments`, CONSTRAINT `post_attachments_ibfk_1` FOREIGN KEY (`post_id`) REFERENCES `post` (`id`)) in /var/www/htdocs/Treehouse/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/Treehouse/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/Treehouse/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/Treehouse/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/Treehouse/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/Treehouse/app/Models/Post_model.php(101): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/htdocs/Treehouse/app/Controllers/Forum.php(65): App\Models\Post_model->uploadAttachments()
+#6 /var/www/htdocs/Treehouse/app/Controllers/Forum.php(46): App\Controllers\Forum->uploadMultipleFiles()
+#7 /var/www/htdocs/Treehouse/system/CodeIgniter.php(934): App\Controllers\Forum->save()
+#8 /var/www/htdocs/Treehouse/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/htdocs/Treehouse/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/htdocs/Treehouse/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-07 11:46:35 --> Cannot add or update a child row: a foreign key constraint fails (`Treehouse`.`post_attachments`, CONSTRAINT `post_attachments_ibfk_1` FOREIGN KEY (`post_id`) REFERENCES `post` (`id`))
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/Post_model.php(101): CodeIgniter\Database\BaseBuilder->insert()
+ 3 APPPATH/Controllers/Forum.php(65): App\Models\Post_model->uploadAttachments()
+ 4 APPPATH/Controllers/Forum.php(46): App\Controllers\Forum->uploadMultipleFiles()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Forum->save()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-07 22:22:39 --> Cannot access offset of type string on string
+in APPPATH/Views/post_content.php on line 23.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Forum.php(114): view()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Forum->displayPost()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-07 22:23:40 --> Cannot access offset of type string on string
+in APPPATH/Views/post_content.php on line 23.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Forum.php(114): view()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Forum->displayPost()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-07 22:23:42 --> Cannot access offset of type string on string
+in APPPATH/Views/post_content.php on line 23.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Forum.php(114): view()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Forum->displayPost()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-07 22:23:43 --> Cannot access offset of type string on string
+in APPPATH/Views/post_content.php on line 23.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Forum.php(114): view()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Forum->displayPost()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

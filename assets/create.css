@@ -1,0 +1,24 @@
+header {
+    font-size: 20px;
+    position: absolute;
+    top: -45px;
+    left: 23%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.form-group {
+    position: absolute;
+    top: 50%;
+    left: calc(50% + 125px); 
+    transform: translate(-50%, -50%);
+    width: 60%;
+    max-width: 800px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}

@@ -1,0 +1,22 @@
+ERROR - 2023-05-03 06:09:39 --> mysqli_sql_exception: Column 'author' cannot be null in /var/www/htdocs/Treehouse/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/Treehouse/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/Treehouse/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/Treehouse/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/Treehouse/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/Treehouse/app/Models/Post_model.php(15): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/htdocs/Treehouse/app/Controllers/Forum.php(35): App\Models\Post_model->post()
+#6 /var/www/htdocs/Treehouse/system/CodeIgniter.php(934): App\Controllers\Forum->save()
+#7 /var/www/htdocs/Treehouse/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/Treehouse/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/Treehouse/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-03 06:09:39 --> Column 'author' cannot be null
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/Post_model.php(15): CodeIgniter\Database\BaseBuilder->insert()
+ 3 APPPATH/Controllers/Forum.php(35): App\Models\Post_model->post()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Forum->save()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

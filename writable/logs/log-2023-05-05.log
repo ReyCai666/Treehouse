@@ -1,0 +1,179 @@
+CRITICAL - 2023-05-05 11:47:52 --> base_url(): Argument #2 ($scheme) must be of type ?string, array given, called in /var/www/htdocs/Treehouse/app/Views/login.php on line 11
+in SYSTEMPATH/Helpers/url_helper.php on line 138.
+ 1 APPPATH/Views/login.php(11): base_url()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/login.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Login.php(33): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 11:47:56 --> base_url(): Argument #2 ($scheme) must be of type ?string, array given, called in /var/www/htdocs/Treehouse/app/Views/login.php on line 11
+in SYSTEMPATH/Helpers/url_helper.php on line 138.
+ 1 APPPATH/Views/login.php(11): base_url()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/login.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Login.php(33): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 11:47:57 --> base_url(): Argument #2 ($scheme) must be of type ?string, array given, called in /var/www/htdocs/Treehouse/app/Views/login.php on line 11
+in SYSTEMPATH/Helpers/url_helper.php on line 138.
+ 1 APPPATH/Views/login.php(11): base_url()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/login.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Login.php(33): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 11:47:57 --> base_url(): Argument #2 ($scheme) must be of type ?string, array given, called in /var/www/htdocs/Treehouse/app/Views/login.php on line 11
+in SYSTEMPATH/Helpers/url_helper.php on line 138.
+ 1 APPPATH/Views/login.php(11): base_url()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/login.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Login.php(33): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 12:42:13 --> Undefined array key "user_authenticated"
+in APPPATH/Controllers/Forum.php on line 12.
+ 1 APPPATH/Controllers/Forum.php(12): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Forum->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 12:44:49 --> Undefined array key "username"
+in APPPATH/Controllers/ProfileController.php on line 14.
+ 1 APPPATH/Controllers/ProfileController.php(14): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ProfileController->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 15:39:46 --> Undefined array key "post_id"
+in APPPATH/Views/post_content.php on line 26.
+ 1 APPPATH/Views/post_content.php(26): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/post_content.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Forum.php(74): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Forum->displayPost()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 15:40:08 --> Class "App\Controllers\Comment_model" not found
+in APPPATH/Controllers/CommentController.php on line 10.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\CommentController->postComment()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-05 15:41:23 --> mysqli_sql_exception: Unknown column 'comment' in 'field list' in /var/www/htdocs/Treehouse/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/Treehouse/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/Treehouse/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/Treehouse/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/Treehouse/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/Treehouse/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/htdocs/Treehouse/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#6 /var/www/htdocs/Treehouse/system/Model.php(730): CodeIgniter\BaseModel->insert()
+#7 /var/www/htdocs/Treehouse/app/Controllers/CommentController.php(19): CodeIgniter\Model->insert()
+#8 /var/www/htdocs/Treehouse/system/CodeIgniter.php(934): App\Controllers\CommentController->postComment()
+#9 /var/www/htdocs/Treehouse/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/htdocs/Treehouse/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/htdocs/Treehouse/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-05 15:41:23 --> Unknown column 'comment' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Controllers/CommentController.php(19): CodeIgniter\Model->insert()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\CommentController->postComment()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-05 15:41:47 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in /var/www/htdocs/Treehouse/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/Treehouse/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/Treehouse/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/Treehouse/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/Treehouse/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/Treehouse/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/htdocs/Treehouse/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#6 /var/www/htdocs/Treehouse/system/Model.php(730): CodeIgniter\BaseModel->insert()
+#7 /var/www/htdocs/Treehouse/app/Controllers/CommentController.php(19): CodeIgniter\Model->insert()
+#8 /var/www/htdocs/Treehouse/system/CodeIgniter.php(934): App\Controllers\CommentController->postComment()
+#9 /var/www/htdocs/Treehouse/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/htdocs/Treehouse/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/htdocs/Treehouse/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-05 15:41:47 --> Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Controllers/CommentController.php(19): CodeIgniter\Model->insert()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\CommentController->postComment()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-05 15:44:05 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in /var/www/htdocs/Treehouse/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/Treehouse/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/Treehouse/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/Treehouse/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/Treehouse/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/Treehouse/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/htdocs/Treehouse/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#6 /var/www/htdocs/Treehouse/system/Model.php(730): CodeIgniter\BaseModel->insert()
+#7 /var/www/htdocs/Treehouse/app/Controllers/CommentController.php(19): CodeIgniter\Model->insert()
+#8 /var/www/htdocs/Treehouse/system/CodeIgniter.php(934): App\Controllers\CommentController->postComment()
+#9 /var/www/htdocs/Treehouse/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/htdocs/Treehouse/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/htdocs/Treehouse/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-05 15:44:05 --> Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Controllers/CommentController.php(19): CodeIgniter\Model->insert()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\CommentController->postComment()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-05 15:44:25 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in /var/www/htdocs/Treehouse/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/Treehouse/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/Treehouse/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/Treehouse/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/Treehouse/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/Treehouse/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/htdocs/Treehouse/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#6 /var/www/htdocs/Treehouse/system/Model.php(730): CodeIgniter\BaseModel->insert()
+#7 /var/www/htdocs/Treehouse/app/Controllers/CommentController.php(19): CodeIgniter\Model->insert()
+#8 /var/www/htdocs/Treehouse/system/CodeIgniter.php(934): App\Controllers\CommentController->postComment()
+#9 /var/www/htdocs/Treehouse/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/htdocs/Treehouse/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/htdocs/Treehouse/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-05 15:44:25 --> Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Controllers/CommentController.php(19): CodeIgniter\Model->insert()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\CommentController->postComment()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

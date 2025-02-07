@@ -1,0 +1,448 @@
+ERROR - 2023-04-02 06:13:27 --> mysqli_sql_exception: Unknown column 'email_verification' in 'field list' in /var/www/htdocs/Treehouse/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/Treehouse/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/Treehouse/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/Treehouse/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/Treehouse/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/Treehouse/app/Models/User_model.php(27): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/htdocs/Treehouse/app/Controllers/Register.php(39): App\Models\User_model->register()
+#6 /var/www/htdocs/Treehouse/system/CodeIgniter.php(934): App\Controllers\Register->index()
+#7 /var/www/htdocs/Treehouse/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/Treehouse/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/Treehouse/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-02 06:13:27 --> Unknown column 'email_verification' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/User_model.php(27): CodeIgniter\Database\BaseBuilder->insert()
+ 3 APPPATH/Controllers/Register.php(39): App\Models\User_model->register()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Register->index()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-02 06:22:54 --> Undefined variable $email_verification
+in APPPATH/Controllers/Register.php on line 33.
+ 1 APPPATH/Controllers/Register.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Register->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-02 06:25:26 --> Call to undefined method App\Controllers\Register::sendVerificationEmail()
+in APPPATH/Controllers/Register.php on line 40.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Register->index()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-02 06:43:56 --> Undefined variable $data
+in APPPATH/Controllers/Register.php on line 97.
+ 1 APPPATH/Controllers/Register.php(97): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Register->verify()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-02 06:53:03 --> Undefined array key "email_verified"
+in APPPATH/Models/User_model.php on line 28.
+ 1 APPPATH/Models/User_model.php(28): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Register.php(34): App\Models\User_model->register()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Register->index()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-02 07:04:02 --> Undefined array key "email_verified"
+in APPPATH/Models/User_model.php on line 28.
+ 1 APPPATH/Models/User_model.php(28): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Register.php(34): App\Models\User_model->register()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Register->index()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-02 07:12:40 --> Failed to send verification email to rey3@uqconnect.edu.au
+CRITICAL - 2023-04-02 07:12:40 --> Undefined variable $data
+in APPPATH/Controllers/Register.php on line 97.
+ 1 APPPATH/Controllers/Register.php(97): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Register->verify()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-02 07:15:30 --> Failed to send verification email to yingzheng.cai@uqconnect.edu.au
+CRITICAL - 2023-04-02 07:15:30 --> Undefined variable $data
+in APPPATH/Controllers/Register.php on line 97.
+ 1 APPPATH/Controllers/Register.php(97): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Register->verify()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-02 07:19:49 --> Failed to send verification email to yingzheng.cai@uqconnect.edu.au
+CRITICAL - 2023-04-02 07:32:19 --> Undefined variable $to
+in APPPATH/Controllers/Register.php on line 104.
+ 1 APPPATH/Controllers/Register.php(104): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Register.php(40): App\Controllers\Register->sendVerificationEmail()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Register->index()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-02 07:33:54 --> strpos(): Argument #1 ($haystack) must be of type string, CodeIgniter\Email\Email given
+in SYSTEMPATH/Email/Email.php on line 737.
+ 1 SYSTEMPATH/Email/Email.php(737): strpos()
+ 2 SYSTEMPATH/Email/Email.php(550): CodeIgniter\Email\Email->stringToArray()
+ 3 APPPATH/Controllers/Register.php(104): CodeIgniter\Email\Email->setTo()
+ 4 APPPATH/Controllers/Register.php(40): App\Controllers\Register->sendVerificationEmail()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Register->index()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-02 07:34:40 --> strpos(): Argument #1 ($haystack) must be of type string, CodeIgniter\Email\Email given
+in SYSTEMPATH/Email/Email.php on line 737.
+ 1 SYSTEMPATH/Email/Email.php(737): strpos()
+ 2 SYSTEMPATH/Email/Email.php(550): CodeIgniter\Email\Email->stringToArray()
+ 3 APPPATH/Controllers/Register.php(104): CodeIgniter\Email\Email->setTo()
+ 4 APPPATH/Controllers/Register.php(40): App\Controllers\Register->sendVerificationEmail()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Register->index()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-02 07:35:10 --> strpos(): Argument #1 ($haystack) must be of type string, CodeIgniter\Email\Email given
+in SYSTEMPATH/Email/Email.php on line 737.
+ 1 SYSTEMPATH/Email/Email.php(737): strpos()
+ 2 SYSTEMPATH/Email/Email.php(550): CodeIgniter\Email\Email->stringToArray()
+ 3 APPPATH/Controllers/Register.php(104): CodeIgniter\Email\Email->setTo()
+ 4 APPPATH/Controllers/Register.php(40): App\Controllers\Register->sendVerificationEmail()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Register->index()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-02 07:37:41 --> Call to undefined method CodeIgniter\Email\Email::getEmail()
+in APPPATH/Controllers/Register.php on line 104.
+ 1 APPPATH/Controllers/Register.php(40): App\Controllers\Register->sendVerificationEmail()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Register->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-02 07:40:56 --> strpos(): Argument #1 ($haystack) must be of type string, CodeIgniter\Email\Email given
+in SYSTEMPATH/Email/Email.php on line 737.
+ 1 SYSTEMPATH/Email/Email.php(737): strpos()
+ 2 SYSTEMPATH/Email/Email.php(550): CodeIgniter\Email\Email->stringToArray()
+ 3 APPPATH/Controllers/Register.php(104): CodeIgniter\Email\Email->setTo()
+ 4 APPPATH/Controllers/Register.php(40): App\Controllers\Register->sendVerificationEmail()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Register->index()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-02 07:42:51 --> Undefined variable $emailAddress
+in APPPATH/Controllers/Register.php on line 104.
+ 1 APPPATH/Controllers/Register.php(104): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Register.php(40): App\Controllers\Register->sendVerificationEmail()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Register->index()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-02 07:44:36 --> Email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2023-04-02 07:44:36 --> 
+ERROR - 2023-04-02 07:44:36 --> Failed to send verification email to yingzheng.cai@uqconnect.edu.au
+ERROR - 2023-04-02 07:59:33 --> Email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2023-04-02 07:59:33 --> 
+ERROR - 2023-04-02 07:59:33 --> Failed to send verification email to yingzheng.cai@uqconnect.edu.au
+ERROR - 2023-04-02 08:02:17 --> Email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2023-04-02 08:02:17 --> 
+ERROR - 2023-04-02 08:02:17 --> Failed to send verification email to caiyingzhenggaming666@gmail.com
+CRITICAL - 2023-04-02 10:24:34 --> Call to undefined method CodeIgniter\Email\Email::setSMTPHost()
+in APPPATH/Controllers/Register.php on line 109.
+ 1 APPPATH/Controllers/Register.php(40): App\Controllers\Register->sendVerificationEmail()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Register->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-02 10:30:12 --> Call to undefined method CodeIgniter\Email\Email::setSMTPHost()
+in APPPATH/Controllers/Register.php on line 109.
+ 1 APPPATH/Controllers/Register.php(40): App\Controllers\Register->sendVerificationEmail()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Register->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-02 10:32:48 --> Call to undefined method CodeIgniter\Email\Email::setSMTPUser()
+in APPPATH/Controllers/Register.php on line 109.
+ 1 APPPATH/Controllers/Register.php(40): App\Controllers\Register->sendVerificationEmail()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Register->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-02 10:33:37 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): Unable to connect to smtp.gmail.com:587 (Connection timed out) in /var/www/htdocs/Treehouse/system/Email/Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/htdocs/Treehouse/system/Email/Email.php(1863): fsockopen()
+#2 /var/www/htdocs/Treehouse/system/Email/Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 /var/www/htdocs/Treehouse/system/Email/Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /var/www/htdocs/Treehouse/system/Email/Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 /var/www/htdocs/Treehouse/app/Controllers/Register.php(110): CodeIgniter\Email\Email->send()
+#6 /var/www/htdocs/Treehouse/app/Controllers/Register.php(40): App\Controllers\Register->sendVerificationEmail()
+#7 /var/www/htdocs/Treehouse/system/CodeIgniter.php(934): App\Controllers\Register->index()
+#8 /var/www/htdocs/Treehouse/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/htdocs/Treehouse/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/htdocs/Treehouse/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-04-02 10:33:37 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-02 10:33:37 --> 
+ERROR - 2023-04-02 10:33:37 --> Failed to send verification email to yingzheng.cai@uqconnect.edu.au
+ERROR - 2023-04-02 10:42:36 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): Unable to connect to smtp.gmail.com:587 (Connection timed out) in /var/www/htdocs/Treehouse/system/Email/Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/htdocs/Treehouse/system/Email/Email.php(1863): fsockopen()
+#2 /var/www/htdocs/Treehouse/system/Email/Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 /var/www/htdocs/Treehouse/system/Email/Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /var/www/htdocs/Treehouse/system/Email/Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 /var/www/htdocs/Treehouse/app/Controllers/Register.php(110): CodeIgniter\Email\Email->send()
+#6 /var/www/htdocs/Treehouse/app/Controllers/Register.php(40): App\Controllers\Register->sendVerificationEmail()
+#7 /var/www/htdocs/Treehouse/system/CodeIgniter.php(934): App\Controllers\Register->index()
+#8 /var/www/htdocs/Treehouse/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/htdocs/Treehouse/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/htdocs/Treehouse/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-04-02 10:42:36 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-02 10:42:36 --> 
+ERROR - 2023-04-02 10:42:36 --> Failed to send verification email to caiyingzhenggaming666@gmail.com
+ERROR - 2023-04-02 10:54:55 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): Unable to connect to smtp.gmail.com:587 (Connection timed out) in /var/www/htdocs/Treehouse/system/Email/Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/htdocs/Treehouse/system/Email/Email.php(1863): fsockopen()
+#2 /var/www/htdocs/Treehouse/system/Email/Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 /var/www/htdocs/Treehouse/system/Email/Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /var/www/htdocs/Treehouse/system/Email/Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 /var/www/htdocs/Treehouse/app/Controllers/Register.php(108): CodeIgniter\Email\Email->send()
+#6 /var/www/htdocs/Treehouse/app/Controllers/Register.php(40): App\Controllers\Register->sendVerificationEmail()
+#7 /var/www/htdocs/Treehouse/system/CodeIgniter.php(934): App\Controllers\Register->index()
+#8 /var/www/htdocs/Treehouse/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/htdocs/Treehouse/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/htdocs/Treehouse/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-04-02 10:54:55 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-02 10:54:55 --> 
+ERROR - 2023-04-02 10:54:55 --> Failed to send verification email to caiyingzhenggaming666@gmail.com
+ERROR - 2023-04-02 10:57:57 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): Unable to connect to smtp.gmail.com:587 (Connection timed out) in /var/www/htdocs/Treehouse/system/Email/Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/htdocs/Treehouse/system/Email/Email.php(1863): fsockopen()
+#2 /var/www/htdocs/Treehouse/system/Email/Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 /var/www/htdocs/Treehouse/system/Email/Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /var/www/htdocs/Treehouse/system/Email/Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 /var/www/htdocs/Treehouse/app/Controllers/Register.php(108): CodeIgniter\Email\Email->send()
+#6 /var/www/htdocs/Treehouse/app/Controllers/Register.php(40): App\Controllers\Register->sendVerificationEmail()
+#7 /var/www/htdocs/Treehouse/system/CodeIgniter.php(934): App\Controllers\Register->index()
+#8 /var/www/htdocs/Treehouse/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/htdocs/Treehouse/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/htdocs/Treehouse/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-04-02 10:57:57 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-02 10:57:57 --> 
+ERROR - 2023-04-02 10:57:57 --> Failed to send verification email to caiyingzhenggaming666@gmail.com
+ERROR - 2023-04-02 11:52:39 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): Unable to connect to smtp.gmail.com:587 (Connection timed out) in /var/www/htdocs/Treehouse/system/Email/Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/htdocs/Treehouse/system/Email/Email.php(1863): fsockopen()
+#2 /var/www/htdocs/Treehouse/system/Email/Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 /var/www/htdocs/Treehouse/system/Email/Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /var/www/htdocs/Treehouse/system/Email/Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 /var/www/htdocs/Treehouse/app/Controllers/Register.php(111): CodeIgniter\Email\Email->send()
+#6 /var/www/htdocs/Treehouse/app/Controllers/Register.php(40): App\Controllers\Register->sendVerificationEmail()
+#7 /var/www/htdocs/Treehouse/system/CodeIgniter.php(934): App\Controllers\Register->index()
+#8 /var/www/htdocs/Treehouse/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/htdocs/Treehouse/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/htdocs/Treehouse/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-04-02 11:52:39 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-02 11:52:39 --> 
+ERROR - 2023-04-02 11:52:39 --> Failed to send verification email to caiyingzhenggaming666@gmail.com
+ERROR - 2023-04-02 11:59:06 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): Unable to connect to smtp.gmail.com:587 (Connection timed out) in /var/www/htdocs/Treehouse/system/Email/Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/htdocs/Treehouse/system/Email/Email.php(1863): fsockopen()
+#2 /var/www/htdocs/Treehouse/system/Email/Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 /var/www/htdocs/Treehouse/system/Email/Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /var/www/htdocs/Treehouse/system/Email/Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 /var/www/htdocs/Treehouse/app/Controllers/Register.php(108): CodeIgniter\Email\Email->send()
+#6 /var/www/htdocs/Treehouse/app/Controllers/Register.php(40): App\Controllers\Register->sendVerificationEmail()
+#7 /var/www/htdocs/Treehouse/system/CodeIgniter.php(934): App\Controllers\Register->index()
+#8 /var/www/htdocs/Treehouse/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/htdocs/Treehouse/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/htdocs/Treehouse/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-04-02 11:59:06 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-02 11:59:06 --> 
+ERROR - 2023-04-02 12:06:25 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): Unable to connect to smtp.gmail.com:587 (Connection timed out) in /var/www/htdocs/Treehouse/system/Email/Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/htdocs/Treehouse/system/Email/Email.php(1863): fsockopen()
+#2 /var/www/htdocs/Treehouse/system/Email/Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 /var/www/htdocs/Treehouse/system/Email/Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /var/www/htdocs/Treehouse/system/Email/Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 /var/www/htdocs/Treehouse/app/Controllers/Register.php(108): CodeIgniter\Email\Email->send()
+#6 /var/www/htdocs/Treehouse/app/Controllers/Register.php(40): App\Controllers\Register->sendVerificationEmail()
+#7 /var/www/htdocs/Treehouse/system/CodeIgniter.php(934): App\Controllers\Register->index()
+#8 /var/www/htdocs/Treehouse/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/htdocs/Treehouse/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/htdocs/Treehouse/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-04-02 12:06:25 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-02 12:06:25 --> 
+ERROR - 2023-04-02 12:15:52 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): Unable to connect to smtp.gmail.com:587 (Connection timed out) in /var/www/htdocs/Treehouse/system/Email/Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/htdocs/Treehouse/system/Email/Email.php(1863): fsockopen()
+#2 /var/www/htdocs/Treehouse/system/Email/Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 /var/www/htdocs/Treehouse/system/Email/Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /var/www/htdocs/Treehouse/system/Email/Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 /var/www/htdocs/Treehouse/app/Controllers/Register.php(108): CodeIgniter\Email\Email->send()
+#6 /var/www/htdocs/Treehouse/app/Controllers/Register.php(40): App\Controllers\Register->sendVerificationEmail()
+#7 /var/www/htdocs/Treehouse/system/CodeIgniter.php(934): App\Controllers\Register->index()
+#8 /var/www/htdocs/Treehouse/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/htdocs/Treehouse/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/htdocs/Treehouse/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-04-02 12:15:52 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-02 12:15:52 --> 
+ERROR - 2023-04-02 12:36:06 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): Unable to connect to smtp.office365.com:587 (Connection timed out) in /var/www/htdocs/Treehouse/system/Email/Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/htdocs/Treehouse/system/Email/Email.php(1863): fsockopen()
+#2 /var/www/htdocs/Treehouse/system/Email/Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 /var/www/htdocs/Treehouse/system/Email/Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /var/www/htdocs/Treehouse/system/Email/Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 /var/www/htdocs/Treehouse/app/Controllers/Register.php(108): CodeIgniter\Email\Email->send()
+#6 /var/www/htdocs/Treehouse/app/Controllers/Register.php(40): App\Controllers\Register->sendVerificationEmail()
+#7 /var/www/htdocs/Treehouse/system/CodeIgniter.php(934): App\Controllers\Register->index()
+#8 /var/www/htdocs/Treehouse/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/htdocs/Treehouse/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/htdocs/Treehouse/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-04-02 12:36:06 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-02 12:36:06 --> 
+ERROR - 2023-04-02 12:51:50 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): Unable to connect to smtp.office365.com:587 (Connection timed out) in /var/www/htdocs/Treehouse/system/Email/Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/htdocs/Treehouse/system/Email/Email.php(1863): fsockopen()
+#2 /var/www/htdocs/Treehouse/system/Email/Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 /var/www/htdocs/Treehouse/system/Email/Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /var/www/htdocs/Treehouse/system/Email/Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 /var/www/htdocs/Treehouse/app/Controllers/Register.php(108): CodeIgniter\Email\Email->send()
+#6 /var/www/htdocs/Treehouse/app/Controllers/Register.php(40): App\Controllers\Register->sendVerificationEmail()
+#7 /var/www/htdocs/Treehouse/system/CodeIgniter.php(934): App\Controllers\Register->index()
+#8 /var/www/htdocs/Treehouse/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/htdocs/Treehouse/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/htdocs/Treehouse/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-04-02 12:51:50 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-02 12:51:50 --> 
+ERROR - 2023-04-02 13:06:24 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo for ssl failed: Name or service not known in /var/www/htdocs/Treehouse/system/Email/Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/htdocs/Treehouse/system/Email/Email.php(1863): fsockopen()
+#2 /var/www/htdocs/Treehouse/system/Email/Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 /var/www/htdocs/Treehouse/system/Email/Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /var/www/htdocs/Treehouse/system/Email/Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 /var/www/htdocs/Treehouse/app/Controllers/Register.php(108): CodeIgniter\Email\Email->send()
+#6 /var/www/htdocs/Treehouse/app/Controllers/Register.php(40): App\Controllers\Register->sendVerificationEmail()
+#7 /var/www/htdocs/Treehouse/system/CodeIgniter.php(934): App\Controllers\Register->index()
+#8 /var/www/htdocs/Treehouse/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/htdocs/Treehouse/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/htdocs/Treehouse/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-04-02 13:06:24 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-02 13:06:24 --> 
+ERROR - 2023-04-02 13:11:50 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo for ssl failed: Name or service not known in /var/www/htdocs/Treehouse/system/Email/Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/htdocs/Treehouse/system/Email/Email.php(1863): fsockopen()
+#2 /var/www/htdocs/Treehouse/system/Email/Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 /var/www/htdocs/Treehouse/system/Email/Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /var/www/htdocs/Treehouse/system/Email/Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 /var/www/htdocs/Treehouse/app/Controllers/Register.php(108): CodeIgniter\Email\Email->send()
+#6 /var/www/htdocs/Treehouse/app/Controllers/Register.php(40): App\Controllers\Register->sendVerificationEmail()
+#7 /var/www/htdocs/Treehouse/system/CodeIgniter.php(934): App\Controllers\Register->index()
+#8 /var/www/htdocs/Treehouse/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/htdocs/Treehouse/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/htdocs/Treehouse/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-04-02 13:11:50 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-02 13:11:50 --> 
+ERROR - 2023-04-02 13:26:48 --> Failed to send verification email to caiyingzhenggaming666@gmail.com
+ERROR - 2023-04-02 13:28:53 --> Failed to send verification email to caiyingzhengrey@gmail.com
+ERROR - 2023-04-02 13:29:37 --> Failed to send verification email to 2985808857@qq.com
+ERROR - 2023-04-02 13:30:11 --> Failed to send verification email to caiyingzhengRey@outlook.com
+ERROR - 2023-04-02 13:43:05 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): Unable to connect to tls://smtp.gmail.com:465 (Connection timed out) in /var/www/htdocs/Treehouse/system/Email/Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/htdocs/Treehouse/system/Email/Email.php(1863): fsockopen()
+#2 /var/www/htdocs/Treehouse/system/Email/Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 /var/www/htdocs/Treehouse/system/Email/Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /var/www/htdocs/Treehouse/system/Email/Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 /var/www/htdocs/Treehouse/app/Controllers/Register.php(119): CodeIgniter\Email\Email->send()
+#6 /var/www/htdocs/Treehouse/app/Controllers/Register.php(40): App\Controllers\Register->sendVerificationEmail()
+#7 /var/www/htdocs/Treehouse/system/CodeIgniter.php(934): App\Controllers\Register->index()
+#8 /var/www/htdocs/Treehouse/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/htdocs/Treehouse/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/htdocs/Treehouse/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-04-02 13:43:05 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-02 13:43:05 --> 
+ERROR - 2023-04-02 13:43:25 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): Unable to connect to tls://smtp.gmail.com:465 (Connection timed out) in /var/www/htdocs/Treehouse/system/Email/Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/htdocs/Treehouse/system/Email/Email.php(1863): fsockopen()
+#2 /var/www/htdocs/Treehouse/system/Email/Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 /var/www/htdocs/Treehouse/system/Email/Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /var/www/htdocs/Treehouse/system/Email/Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 /var/www/htdocs/Treehouse/app/Controllers/Register.php(121): CodeIgniter\Email\Email->send()
+#6 /var/www/htdocs/Treehouse/app/Controllers/Register.php(40): App\Controllers\Register->sendVerificationEmail()
+#7 /var/www/htdocs/Treehouse/system/CodeIgniter.php(934): App\Controllers\Register->index()
+#8 /var/www/htdocs/Treehouse/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/htdocs/Treehouse/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/htdocs/Treehouse/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-04-02 13:43:25 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-02 13:43:25 --> Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-02 13:43:25 --> Failed to send verification email to caiyingzhenggaming666@gmail.com
+ERROR - 2023-04-02 14:03:21 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): Unable to connect to smtp.office365.com:587 (Connection timed out) in /var/www/htdocs/Treehouse/system/Email/Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/htdocs/Treehouse/system/Email/Email.php(1863): fsockopen()
+#2 /var/www/htdocs/Treehouse/system/Email/Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 /var/www/htdocs/Treehouse/system/Email/Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /var/www/htdocs/Treehouse/system/Email/Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 /var/www/htdocs/Treehouse/app/Controllers/Register.php(119): CodeIgniter\Email\Email->send()
+#6 /var/www/htdocs/Treehouse/app/Controllers/Register.php(40): App\Controllers\Register->sendVerificationEmail()
+#7 /var/www/htdocs/Treehouse/system/CodeIgniter.php(934): App\Controllers\Register->index()
+#8 /var/www/htdocs/Treehouse/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/htdocs/Treehouse/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/htdocs/Treehouse/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-04-02 14:03:21 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-02 14:03:21 --> 
+ERROR - 2023-04-02 14:04:21 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): Unable to connect to smtp.office365.com:587 (Connection timed out) in /var/www/htdocs/Treehouse/system/Email/Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/htdocs/Treehouse/system/Email/Email.php(1863): fsockopen()
+#2 /var/www/htdocs/Treehouse/system/Email/Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 /var/www/htdocs/Treehouse/system/Email/Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /var/www/htdocs/Treehouse/system/Email/Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 /var/www/htdocs/Treehouse/app/Controllers/Register.php(121): CodeIgniter\Email\Email->send()
+#6 /var/www/htdocs/Treehouse/app/Controllers/Register.php(40): App\Controllers\Register->sendVerificationEmail()
+#7 /var/www/htdocs/Treehouse/system/CodeIgniter.php(934): App\Controllers\Register->index()
+#8 /var/www/htdocs/Treehouse/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/htdocs/Treehouse/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/htdocs/Treehouse/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-04-02 14:04:21 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-02 14:04:21 --> Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-02 14:04:21 --> Failed to send verification email to caiyingzhenggaming666@gmail.com
+ERROR - 2023-04-02 15:42:59 --> Email: Unable to send email using Sendmail. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-02 15:42:59 --> Exit status code: 127
+Unable to open a socket to Sendmail. Please check settings.
+ERROR - 2023-04-02 15:42:59 --> Email: Unable to send email using Sendmail. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-02 15:42:59 --> Exit status code: 127
+Unable to open a socket to Sendmail. Please check settings.
+Unable to send email using Sendmail. Your server might not be configured to send mail using this method.
+Exit status code: 127
+Unable to open a socket to Sendmail. Please check settings.
+ERROR - 2023-04-02 15:42:59 --> Failed to send verification email to caiyingzhenggaming666@gmail.com
+ERROR - 2023-04-02 16:22:03 --> Failed to send verification email to caiyingzhenggaming666@gmail.com
+ERROR - 2023-04-02 16:24:24 --> Failed to send verification email to caiyingzhenggaming666@gmail.com
+ERROR - 2023-04-02 16:28:20 --> Failed to send verification email to caiyingzhenggaming666@gmail.com

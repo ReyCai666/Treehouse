@@ -1,0 +1,6 @@
+ERROR - 2023-04-27 16:19:56 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-27 16:19:56 --> 
+hello: 220 mailhub.eait.uq.edu.au ESMTP Sendmail 8.15.1/8.15.1; Thu, 27 Apr 2023 16:19:56 +1000 (AEST)
+
+The following SMTP error was encountered: 220 mailhub.eait.uq.edu.au ESMTP Sendmail 8.15.1/8.15.1; Thu, 27 Apr 2023 16:19:56 +1000 (AEST)
+

@@ -1,0 +1,379 @@
+CRITICAL - 2023-04-03 05:04:08 --> "Success!" is an invalid log level.
+in SYSTEMPATH/Log/Logger.php on line 258.
+ 1 SYSTEMPATH/Log/Logger.php(258): CodeIgniter\Log\Exceptions\LogException::forInvalidLogLevel()
+ 2 SYSTEMPATH/Common.php(812): CodeIgniter\Log\Logger->log()
+ 3 APPPATH/Controllers/Register.php(110): log_message()
+ 4 APPPATH/Controllers/Register.php(40): App\Controllers\Register->sendVerificationEmail()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Register->index()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-03 05:25:29 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): Unable to connect to tls://smtp.zoho.com.au:465 (Connection timed out) in /var/www/htdocs/Treehouse/system/Email/Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/htdocs/Treehouse/system/Email/Email.php(1863): fsockopen()
+#2 /var/www/htdocs/Treehouse/system/Email/Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 /var/www/htdocs/Treehouse/system/Email/Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /var/www/htdocs/Treehouse/system/Email/Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 /var/www/htdocs/Treehouse/app/Controllers/Register.php(109): CodeIgniter\Email\Email->send()
+#6 /var/www/htdocs/Treehouse/app/Controllers/Register.php(40): App\Controllers\Register->sendVerificationEmail()
+#7 /var/www/htdocs/Treehouse/system/CodeIgniter.php(934): App\Controllers\Register->index()
+#8 /var/www/htdocs/Treehouse/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/htdocs/Treehouse/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/htdocs/Treehouse/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-04-03 05:25:29 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-03 05:25:29 --> 
+ERROR - 2023-04-03 05:25:29 --> Failed to send verification email to caiyingzhenggaming666@gmail.com
+ERROR - 2023-04-03 05:30:48 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): Unable to connect to ssl://smtp.zoho.com.au:587 (Connection timed out) in /var/www/htdocs/Treehouse/system/Email/Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/htdocs/Treehouse/system/Email/Email.php(1863): fsockopen()
+#2 /var/www/htdocs/Treehouse/system/Email/Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 /var/www/htdocs/Treehouse/system/Email/Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /var/www/htdocs/Treehouse/system/Email/Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 /var/www/htdocs/Treehouse/app/Controllers/Register.php(109): CodeIgniter\Email\Email->send()
+#6 /var/www/htdocs/Treehouse/app/Controllers/Register.php(40): App\Controllers\Register->sendVerificationEmail()
+#7 /var/www/htdocs/Treehouse/system/CodeIgniter.php(934): App\Controllers\Register->index()
+#8 /var/www/htdocs/Treehouse/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/htdocs/Treehouse/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/htdocs/Treehouse/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-04-03 05:30:48 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-03 05:30:48 --> 
+ERROR - 2023-04-03 05:30:48 --> Failed to send verification email to caiyingzhengrey@gmail.com
+ERROR - 2023-04-03 05:35:20 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): Unable to connect to tls://smtp.zoho.com.au:465 (Connection timed out) in /var/www/htdocs/Treehouse/system/Email/Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/htdocs/Treehouse/system/Email/Email.php(1863): fsockopen()
+#2 /var/www/htdocs/Treehouse/system/Email/Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 /var/www/htdocs/Treehouse/system/Email/Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /var/www/htdocs/Treehouse/system/Email/Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 /var/www/htdocs/Treehouse/app/Controllers/Register.php(121): CodeIgniter\Email\Email->send()
+#6 /var/www/htdocs/Treehouse/app/Controllers/Register.php(40): App\Controllers\Register->sendVerificationEmail()
+#7 /var/www/htdocs/Treehouse/system/CodeIgniter.php(934): App\Controllers\Register->index()
+#8 /var/www/htdocs/Treehouse/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/htdocs/Treehouse/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/htdocs/Treehouse/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-04-03 05:35:20 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-03 05:35:20 --> 
+ERROR - 2023-04-03 05:35:20 --> Failed to send verification email to caiyingzhengrey@gmail.com
+ERROR - 2023-04-03 05:39:45 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): Unable to connect to tls://smtp.zoho.com.au:465 (Connection timed out) in /var/www/htdocs/Treehouse/system/Email/Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/htdocs/Treehouse/system/Email/Email.php(1863): fsockopen()
+#2 /var/www/htdocs/Treehouse/system/Email/Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 /var/www/htdocs/Treehouse/system/Email/Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /var/www/htdocs/Treehouse/system/Email/Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 /var/www/htdocs/Treehouse/app/Controllers/Register.php(122): CodeIgniter\Email\Email->send()
+#6 /var/www/htdocs/Treehouse/app/Controllers/Register.php(41): App\Controllers\Register->sendVerificationEmail()
+#7 /var/www/htdocs/Treehouse/system/CodeIgniter.php(934): App\Controllers\Register->index()
+#8 /var/www/htdocs/Treehouse/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/htdocs/Treehouse/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/htdocs/Treehouse/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-04-03 05:39:45 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-03 05:39:45 --> 
+ERROR - 2023-04-03 05:39:45 --> Failed to send verification email to caiyingzhengrey@gmail.com
+ERROR - 2023-04-03 05:56:53 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): Unable to connect to tls://smtp.zoho.com.au:465 (Connection timed out) in /var/www/htdocs/Treehouse/system/Email/Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/htdocs/Treehouse/system/Email/Email.php(1863): fsockopen()
+#2 /var/www/htdocs/Treehouse/system/Email/Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 /var/www/htdocs/Treehouse/system/Email/Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /var/www/htdocs/Treehouse/system/Email/Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 /var/www/htdocs/Treehouse/app/Controllers/Register.php(111): CodeIgniter\Email\Email->send()
+#6 /var/www/htdocs/Treehouse/app/Controllers/Register.php(41): App\Controllers\Register->sendVerificationEmail()
+#7 /var/www/htdocs/Treehouse/system/CodeIgniter.php(934): App\Controllers\Register->index()
+#8 /var/www/htdocs/Treehouse/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/htdocs/Treehouse/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/htdocs/Treehouse/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-04-03 05:56:53 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-03 05:56:53 --> 
+ERROR - 2023-04-03 05:56:53 --> Failed to send verification email to caiyingzhengrey@gmail.com
+ERROR - 2023-04-03 06:14:59 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1408F10B:SSL routines:ssl3_get_record:wrong version number in /var/www/htdocs/Treehouse/system/Email/Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/htdocs/Treehouse/system/Email/Email.php(1863): fsockopen()
+#2 /var/www/htdocs/Treehouse/system/Email/Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 /var/www/htdocs/Treehouse/system/Email/Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /var/www/htdocs/Treehouse/system/Email/Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 /var/www/htdocs/Treehouse/app/Controllers/Register.php(110): CodeIgniter\Email\Email->send()
+#6 /var/www/htdocs/Treehouse/app/Controllers/Register.php(40): App\Controllers\Register->sendVerificationEmail()
+#7 /var/www/htdocs/Treehouse/system/CodeIgniter.php(934): App\Controllers\Register->index()
+#8 /var/www/htdocs/Treehouse/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/htdocs/Treehouse/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/htdocs/Treehouse/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-04-03 06:14:59 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-03 06:14:59 --> 
+ERROR - 2023-04-03 06:14:59 --> Failed to send verification email to caiyingzhengrey@gmail.com
+ERROR - 2023-04-03 06:17:54 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:141A318A:SSL routines:tls_process_ske_dhe:dh key too small in /var/www/htdocs/Treehouse/system/Email/Email.php:1883
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/htdocs/Treehouse/system/Email/Email.php(1883): stream_socket_enable_crypto()
+#2 /var/www/htdocs/Treehouse/system/Email/Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 /var/www/htdocs/Treehouse/system/Email/Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /var/www/htdocs/Treehouse/system/Email/Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 /var/www/htdocs/Treehouse/app/Controllers/Register.php(110): CodeIgniter\Email\Email->send()
+#6 /var/www/htdocs/Treehouse/app/Controllers/Register.php(40): App\Controllers\Register->sendVerificationEmail()
+#7 /var/www/htdocs/Treehouse/system/CodeIgniter.php(934): App\Controllers\Register->index()
+#8 /var/www/htdocs/Treehouse/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/htdocs/Treehouse/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/htdocs/Treehouse/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-04-03 06:17:54 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-03 06:17:54 --> 220 mailhub.eait.uq.edu.au ESMTP Sendmail 8.15.1/8.15.1; Mon, 3 Apr 2023 16:17:54 +1000 (AEST)
+
+hello: 250-mailhub.eait.uq.edu.au Hello infs3202-ed18d3de.zones.eait.uq.edu.au [172.23.83.216], pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-8BITMIME
+250-SIZE 67108864
+250-DSN
+250-ETRN
+250-STARTTLS
+250-DELIVERBY
+250 HELP
+
+starttls: 220 2.0.0 Ready to start TLS
+
+ERROR - 2023-04-03 06:17:54 --> Failed to send verification email to caiyingzhengrey@gmail.com
+ERROR - 2023-04-03 06:22:36 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): Unable to connect to mailhub.eait.uq.edu.au:587 (Connection timed out) in /var/www/htdocs/Treehouse/system/Email/Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/htdocs/Treehouse/system/Email/Email.php(1863): fsockopen()
+#2 /var/www/htdocs/Treehouse/system/Email/Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 /var/www/htdocs/Treehouse/system/Email/Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /var/www/htdocs/Treehouse/system/Email/Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 /var/www/htdocs/Treehouse/app/Controllers/Register.php(110): CodeIgniter\Email\Email->send()
+#6 /var/www/htdocs/Treehouse/app/Controllers/Register.php(40): App\Controllers\Register->sendVerificationEmail()
+#7 /var/www/htdocs/Treehouse/system/CodeIgniter.php(934): App\Controllers\Register->index()
+#8 /var/www/htdocs/Treehouse/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/htdocs/Treehouse/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/htdocs/Treehouse/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-04-03 06:22:36 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-03 06:22:36 --> 
+ERROR - 2023-04-03 06:22:36 --> Failed to send verification email to caiyingzhengrey@gmail.com
+ERROR - 2023-04-03 06:26:37 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:141A318A:SSL routines:tls_process_ske_dhe:dh key too small in /var/www/htdocs/Treehouse/system/Email/Email.php:1883
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/htdocs/Treehouse/system/Email/Email.php(1883): stream_socket_enable_crypto()
+#2 /var/www/htdocs/Treehouse/system/Email/Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 /var/www/htdocs/Treehouse/system/Email/Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /var/www/htdocs/Treehouse/system/Email/Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 /var/www/htdocs/Treehouse/app/Controllers/Register.php(110): CodeIgniter\Email\Email->send()
+#6 /var/www/htdocs/Treehouse/app/Controllers/Register.php(40): App\Controllers\Register->sendVerificationEmail()
+#7 /var/www/htdocs/Treehouse/system/CodeIgniter.php(934): App\Controllers\Register->index()
+#8 /var/www/htdocs/Treehouse/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/htdocs/Treehouse/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/htdocs/Treehouse/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-04-03 06:26:37 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-03 06:26:37 --> 220 mailhub.eait.uq.edu.au ESMTP Sendmail 8.15.1/8.15.1; Mon, 3 Apr 2023 16:26:37 +1000 (AEST)
+
+hello: 250-mailhub.eait.uq.edu.au Hello infs3202-ed18d3de.zones.eait.uq.edu.au [172.23.83.216], pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-8BITMIME
+250-SIZE 67108864
+250-DSN
+250-ETRN
+250-STARTTLS
+250-DELIVERBY
+250 HELP
+
+starttls: 220 2.0.0 Ready to start TLS
+
+ERROR - 2023-04-03 06:26:37 --> Failed to send verification email to caiyingzhengrey@gmail.com
+ERROR - 2023-04-03 06:32:20 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:141A318A:SSL routines:tls_process_ske_dhe:dh key too small in /var/www/htdocs/Treehouse/system/Email/Email.php:1883
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/htdocs/Treehouse/system/Email/Email.php(1883): stream_socket_enable_crypto()
+#2 /var/www/htdocs/Treehouse/system/Email/Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 /var/www/htdocs/Treehouse/system/Email/Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /var/www/htdocs/Treehouse/system/Email/Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 /var/www/htdocs/Treehouse/app/Controllers/Register.php(110): CodeIgniter\Email\Email->send()
+#6 /var/www/htdocs/Treehouse/app/Controllers/Register.php(40): App\Controllers\Register->sendVerificationEmail()
+#7 /var/www/htdocs/Treehouse/system/CodeIgniter.php(934): App\Controllers\Register->index()
+#8 /var/www/htdocs/Treehouse/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/htdocs/Treehouse/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/htdocs/Treehouse/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-04-03 06:32:20 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-03 06:32:20 --> 220 mailhub.eait.uq.edu.au ESMTP Sendmail 8.15.1/8.15.1; Mon, 3 Apr 2023 16:32:20 +1000 (AEST)
+
+hello: 250-mailhub.eait.uq.edu.au Hello infs3202-ed18d3de.zones.eait.uq.edu.au [172.23.83.216], pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-8BITMIME
+250-SIZE 67108864
+250-DSN
+250-ETRN
+250-STARTTLS
+250-DELIVERBY
+250 HELP
+
+starttls: 220 2.0.0 Ready to start TLS
+
+ERROR - 2023-04-03 06:32:20 --> Failed to send verification email to caiyingzhengrey@gmail.com
+ERROR - 2023-04-03 06:43:20 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:141A318A:SSL routines:tls_process_ske_dhe:dh key too small in /var/www/htdocs/Treehouse/system/Email/Email.php:1883
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/htdocs/Treehouse/system/Email/Email.php(1883): stream_socket_enable_crypto()
+#2 /var/www/htdocs/Treehouse/system/Email/Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 /var/www/htdocs/Treehouse/system/Email/Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /var/www/htdocs/Treehouse/system/Email/Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 /var/www/htdocs/Treehouse/app/Controllers/Register.php(110): CodeIgniter\Email\Email->send()
+#6 /var/www/htdocs/Treehouse/app/Controllers/Register.php(40): App\Controllers\Register->sendVerificationEmail()
+#7 /var/www/htdocs/Treehouse/system/CodeIgniter.php(934): App\Controllers\Register->index()
+#8 /var/www/htdocs/Treehouse/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/htdocs/Treehouse/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/htdocs/Treehouse/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-04-03 06:43:20 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-03 06:43:20 --> 220 mailhub.eait.uq.edu.au ESMTP Sendmail 8.15.1/8.15.1; Mon, 3 Apr 2023 16:43:20 +1000 (AEST)
+
+hello: 250-mailhub.eait.uq.edu.au Hello infs3202-ed18d3de.zones.eait.uq.edu.au [172.23.83.216], pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-8BITMIME
+250-SIZE 67108864
+250-DSN
+250-ETRN
+250-STARTTLS
+250-DELIVERBY
+250 HELP
+
+starttls: 220 2.0.0 Ready to start TLS
+
+ERROR - 2023-04-03 06:43:20 --> Failed to send verification email to yingzheng.cai@uqconnect.edu.au
+ERROR - 2023-04-03 07:20:17 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:141A318A:SSL routines:tls_process_ske_dhe:dh key too small in /var/www/htdocs/Treehouse/system/Email/Email.php:1883
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/htdocs/Treehouse/system/Email/Email.php(1883): stream_socket_enable_crypto()
+#2 /var/www/htdocs/Treehouse/system/Email/Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 /var/www/htdocs/Treehouse/system/Email/Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /var/www/htdocs/Treehouse/system/Email/Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 /var/www/htdocs/Treehouse/app/Controllers/Register.php(117): CodeIgniter\Email\Email->send()
+#6 /var/www/htdocs/Treehouse/app/Controllers/Register.php(40): App\Controllers\Register->sendVerificationEmail()
+#7 /var/www/htdocs/Treehouse/system/CodeIgniter.php(934): App\Controllers\Register->index()
+#8 /var/www/htdocs/Treehouse/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/htdocs/Treehouse/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/htdocs/Treehouse/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-04-03 07:20:17 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-03 07:20:17 --> 220 mailhub.eait.uq.edu.au ESMTP Sendmail 8.15.1/8.15.1; Mon, 3 Apr 2023 17:20:17 +1000 (AEST)
+
+hello: 250-mailhub.eait.uq.edu.au Hello infs3202-ed18d3de.zones.eait.uq.edu.au [172.23.83.216], pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-8BITMIME
+250-SIZE 67108864
+250-DSN
+250-ETRN
+250-STARTTLS
+250-DELIVERBY
+250 HELP
+
+starttls: 220 2.0.0 Ready to start TLS
+
+ERROR - 2023-04-03 07:20:17 --> Failed to send verification email to caiyingzhengrey@gmail.com
+ERROR - 2023-04-03 07:40:56 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:141A318A:SSL routines:tls_process_ske_dhe:dh key too small in /var/www/htdocs/Treehouse/system/Email/Email.php:1883
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/htdocs/Treehouse/system/Email/Email.php(1883): stream_socket_enable_crypto()
+#2 /var/www/htdocs/Treehouse/system/Email/Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 /var/www/htdocs/Treehouse/system/Email/Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /var/www/htdocs/Treehouse/system/Email/Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 /var/www/htdocs/Treehouse/app/Controllers/Register.php(115): CodeIgniter\Email\Email->send()
+#6 /var/www/htdocs/Treehouse/app/Controllers/Register.php(40): App\Controllers\Register->sendVerificationEmail()
+#7 /var/www/htdocs/Treehouse/system/CodeIgniter.php(934): App\Controllers\Register->index()
+#8 /var/www/htdocs/Treehouse/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/htdocs/Treehouse/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/htdocs/Treehouse/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-04-03 07:40:56 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-03 07:40:56 --> 220 mailhub.eait.uq.edu.au ESMTP Sendmail 8.15.1/8.15.1; Mon, 3 Apr 2023 17:40:56 +1000 (AEST)
+
+hello: 250-mailhub.eait.uq.edu.au Hello infs3202-ed18d3de.zones.eait.uq.edu.au [172.23.83.216], pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-8BITMIME
+250-SIZE 67108864
+250-DSN
+250-ETRN
+250-STARTTLS
+250-DELIVERBY
+250 HELP
+
+starttls: 220 2.0.0 Ready to start TLS
+
+ERROR - 2023-04-03 07:40:56 --> Failed to send verification email to caiyingzhengrey@gmail.com
+ERROR - 2023-04-03 07:56:39 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-03 07:56:39 --> Invalid email address: "DO NOT REPLY"
+Invalid email address: "DO NOT REPLY"
+220 mailhub.eait.uq.edu.au ESMTP Sendmail 8.15.1/8.15.1; Mon, 3 Apr 2023 17:56:39 +1000 (AEST)
+
+hello: 250-mailhub.eait.uq.edu.au Hello infs3202-ed18d3de.zones.eait.uq.edu.au [172.23.83.216], pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-8BITMIME
+250-SIZE 67108864
+250-DSN
+250-ETRN
+250-STARTTLS
+250-DELIVERBY
+250 HELP
+
+from: 553 5.5.4 <DO NOT REPLY>... Domain name required for sender address DO.NOT.REPLY
+
+The following SMTP error was encountered: 553 5.5.4 <DO NOT REPLY>... Domain name required for sender address DO.NOT.REPLY
+
+quit: 221 2.0.0 mailhub.eait.uq.edu.au closing connection
+
+ERROR - 2023-04-03 07:56:39 --> Failed to send verification email to caiyingzhengrey@gmail.com
+CRITICAL - 2023-04-03 08:15:15 --> Call to undefined method CodeIgniter\Email\Email::setContentType()
+in APPPATH/Controllers/Register.php on line 122.
+ 1 APPPATH/Controllers/Register.php(40): App\Controllers\Register->sendVerificationEmail()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Register->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-03 08:19:10 --> Invalid file: "app/Views/email_template.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Register.php(120): view()
+ 4 APPPATH/Controllers/Register.php(40): App\Controllers\Register->sendVerificationEmail()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Register->index()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-03 08:21:47 --> Invalid file: "/var/www/htdocs/Treehouse/public/app/Views/email_template.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Register.php(120): view()
+ 4 APPPATH/Controllers/Register.php(40): App\Controllers\Register->sendVerificationEmail()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Register->index()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-03 08:58:31 --> Call to undefined method CodeIgniter\Email\Email::message()
+in APPPATH/Controllers/Register.php on line 120.
+ 1 APPPATH/Controllers/Register.php(40): App\Controllers\Register->sendVerificationEmail()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Register->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
