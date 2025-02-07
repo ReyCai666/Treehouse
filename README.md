@@ -1,3 +1,6 @@
+# What is Treehouse
+UQ Treehouse is an online discussion forum dedicated to creating an online space for UQ students to ask questions, review and comment on the courses, and socializing. Only UQ students have access to this forum. The purpose of this forum, as name suggests, is to provide UQ student community with an online space to get help, guidelines and experiences from the peers and the seniors, especially for those first-year freshmen students and international students to better integrate into Australian campus life and enrich their learning pathway. More importantly, unlike UQ ED discussion’s academic dedication, UQ Treehouse is the platform to socialize and help with more general and personal enquires.
+
 # CodeIgniter 4 Framework
 
 ## What is CodeIgniter?
